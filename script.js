@@ -25,7 +25,7 @@ document.querySelector("#button").addEventListener("click",(e)=>{
         let timeLeft = 11;
         const countdown = setInterval(() => {
         timeLeft--;
-        timerElement.textContent = `Scan Your QR in ${timeLeft}`;
+        timerElement.textContent = `Scan Your QR in ${timeLeft} Seconds`;
 
         if (timeLeft <= 0) {
             clearInterval(countdown);
@@ -34,7 +34,7 @@ document.querySelector("#button").addEventListener("click",(e)=>{
     }, 1000);
     setInterval(() => {
         location.reload();
-    }, 11000);
+    }, 12000);
     }
     else{
         alert("Enter Something In Text Area")
